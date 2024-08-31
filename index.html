@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black; ">
+
+
+    <div class="loader-container">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+
+
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button -->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <!-- Add logo or brand here if needed -->
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a href="#home" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300">Home</a>
+                  <a href="#about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300">About</a>
+                  <a href="#features" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300">Projects</a>
+                  <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <span class="sr-only">View notifications</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                </svg>
+              </button>
+      
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 rounded-full" src="https://t3.ftcdn.net/jpg/06/32/74/54/360_F_632745479_H4uhxk19qEd5VOMHUswWeWpmXLGbnlIQ.jpg" alt="">
+                  </button>
+                </div>
+                <!-- Dropdown menu -->
+                <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="user-menu">
+                  <div class="p-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Your Profile</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="#home" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300">Home</a>
+            <a href="#about" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300">About</a>
+            <a href="#features" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300">Projects</a>
+            <a href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300">Contact</a>
+          </div>
+        </div>
+      </nav>
+         
+      <section id="home" class="relative h-screen overflow-hidden">
+        <div class="parallax-container h-full absolute inset-0">
+          <!-- Add background image and other styles to the container as needed -->
+        </div>
+        <div class="relative flex items-center justify-center h-full text-center text-white">
+          <div class="parallax-text">
+            <h1 class="text-5xl font-serif text-opacity-90">Hi Everyone</h1>
+            <p class="text-lg mt-4">My name is Albin and welcome to my portfolio</p>
+          
+            </div>
+        </div>
+    </section>
+      
+      <section id="about" class="py-12 bg-black-800" style="background-image: linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%);">
+        <div class="container mx-auto px-4">
+            <div class="bg-black-900 p-6 rounded-lg shadow-lg">
+                <!-- Top Content -->
+                <header class="flex flex-col sm:flex-row items-center sm:items-start mb-8">
+                    <div class="h-40 w-40 sm:h-48 sm:w-48 overflow-hidden rounded-full mb-4 sm:mb-0">
+                        <img src="/Portfolio/tailwin/pic.png" alt="Profile picture of Albin Kurian Thomas" class="object-cover h-full w-full">
+                    </div>
+                    <div class="text-center sm:text-left sm:pl-6">
+                        <p class="font-poppins font-bold text-white text-2xl sm:text-4xl">
+                            Albin Kurian Thomas
+                        </p>
+                        <p class="text-gray-400">Software Engineer</p>
+                    </div>
+                </header>
+    
+                <!-- Main Content -->
+                <div class="flex flex-col sm:flex-row">
+                    <!-- My Contact -->
+                    <div class="flex flex-col sm:w-1/3 mb-8 sm:mb-0">
+                        <h2 class="text-lg font-poppins font-bold text-orange-500 mb-4">My Contact</h2>
+                        <div class="border-b-2 border-orange-500 mb-4"></div>
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <a class="w-6 text-gray-400 hover:text-orange-500" href="mailto:albinkthomas45@gmail.com" aria-label="Email Albin Kurian Thomas">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-4">
+                                        <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                                    </svg>
+                                </a>
+                                <div class="ml-2 text-gray-300">albinkthomas45@gmail.com</div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <a class="w-6 text-gray-400 hover:text-orange-500" href="tel:4574358775" aria-label="Call Albin Kurian Thomas">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-4">
+                                        <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+                                    </svg>
+                                </a>
+                                <div class="ml-2 text-gray-300">4574358775</div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <a class="w-6 text-gray-400 hover:text-orange-500" href="https://facebook.com/your-profile" aria-label="Visit Facebook profile">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="h-4">
+                                        <path fill="currentColor" d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                                    </svg>
+                                </a>
+                                <div class="ml-2 text-gray-300">sale galli latur</div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <a class="w-6 text-gray-400 hover:text-orange-500" href="https://twitter.com/albinkurian21" aria-label="Visit Twitter profile">
+                                    <svg class="h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.284-8.237 59.76-16.75-14.008 20.812-31.687 39.279-51.68 54.039z"/>
+                                    </svg>
+                                </a>
+                                <div class="ml-2 text-gray-300">@albinkurian21</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- My Story -->
+                    <div class="flex flex-col sm:w-2/3">
+                        <h2 class="text-lg font-poppins font-bold text-orange-500 mb-4">My Story</h2>
+                        <div class="border-b-2 border-orange-500 mb-4"></div>
+                        <p class="text-gray-300">
+                            Hey, I’m Albin Kurian Thomas, a software engineer specializing in innovative solutions and technology. With a strong background in software development, I’m passionate about creating impactful and efficient software solutions.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Footer -->
+                <footer class="bg-gray-900 text-center py-4 mt-8">
+                    <p class="text-gray-600 text-sm">
+                        &copy; 2024 Albin Kurian Thomas. All rights reserved.
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </section>
+    
+     
+
+
+    <section id="features" class="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b border-neutral-900 bg-neutral-900/30">
+        <div class="relative mx-auto max-w-5xl text-center">
+            <span class="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+                Why Choose Us
+            </span>
+            <h2 class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
+                My Skills
+            </h2>
+            <p class="mx-auto my-4 w-full max-w-xl text-center font-medium leading-relaxed tracking-wide text-gray-400">
+                Our templates allow for maximum customization. No technical skills required – our intuitive design tools let you get the job done easily.
+            </p>
+        </div>
+    
+        <div class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3" style="background-image: linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%);">
+            <article class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-md border" style="background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                    <svg aria-label="Color Swatch Icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                        <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                        <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                        <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                    </svg>
+                </div>
+                <h3 class="mt-6 text-gray-400">Web Developing</h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+                    Tailor your landing page's look and feel, from the color scheme to the font size, to the design of the page.
+                </p>
+            </article>
+    
+            <article class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-md border" style="background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                    <svg aria-label="Bolt Icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bolt" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3"></polyline>
+                    </svg>
+                </div>
+                <h3 class="mt-6 text-gray-400">Web Designing</h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+                    We build our templates with speed in mind, ensuring super-fast load times so your customers never waver.
+                </p>
+            </article>
+    
+            <article class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+                <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-md border" style="background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240);">
+                    <svg aria-label="Tools Icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
+                        <line x1="14.5" y1="5.5" x2="18.5" y2="9.5"></line>
+                        <polyline points="12 8 7 3 3 7 8 12"></polyline>
+                        <line x1="7" y1="8" x2="5.5" y2="9.5"></line>
+                        <polyline points="16 12 21 17 17 21 12 16"></polyline>
+                        <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
+                    </svg>
+                </div>
+                <h3 class="mt-6 text-gray-400">Full Stack Developer</h3>
+                <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+                    Everything you need to succeed and launch your landing page, right out of the box. No need to install anything else.
+                </p>
+            </article>
+        </div>
+    
+        <div class="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b border-neutral-900" style="background-image: linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%);"></div>
+        <div class="absolute bottom-0 right-0 z-0 h-1/3 w-full" ;></div>
+    </section>
+        
+    
+
+    <section id="contact" class="relative bg-black px-6 py-24 sm:py-32 lg:px-8" style="background-image: linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%);">
+        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+            <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+        <div class="relative">
+            <div class="mx-auto max-w-2xl text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contact Me</h2>
+                <!-- <p class="mt-2 text-lg leading-8 text-white">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p> -->
+            </div>
+            <form id="contactForm" class="mx-auto mt-16 max-w-xl sm:mt-20">
+                <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                    <div>
+                        <label for="first-name" class="block text-sm font-semibold leading-6 text-white">First Name</label>
+                        <div class="mt-2.5">
+                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="last-name" class="block text-sm font-semibold leading-6 text-white">Last Name</label>
+                        <div class="mt-2.5">
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="email" class="block text-sm font-semibold leading-6 text-white">Email</label>
+                        <div class="mt-2.5">
+                            <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="phone-number" class="block text-sm font-semibold leading-6 text-white">Phone Number</label>
+                        <div class="relative mt-2.5">
+                            <div class="absolute inset-y-0 left-0 flex items-center">
+                                <label for="country" class="sr-only">Country</label>
+                                <select id="country" name="country" class="h-full rounded-md border-0 bg-transparent py-0 pl-4 pr-9 text-white focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                                    <option>US</option>
+                                    <option>CA</option>
+                                    <option>EU</option>
+                                </select>
+                                <svg class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block text-sm font-semibold leading-6 text-white">Message</label>
+                        <div class="mt-2.5">
+                            <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-4 sm:col-span-2 items-center">
+                        <!-- <button type="button" class="flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-white-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" role="switch" aria-checked="false" aria-labelledby="switch-1-label">
+                            <span class="sr-only"></span>
+                            <span aria-hidden="true" class="h-4 w-4 translate-x-0 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
+                        </button> -->
+                        <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
+                           
+                            <a href="#" class="font-semibold text-indigo-600"></a>.
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <button type="submit" onclick="sendMail()" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's Talk</button>
+                </div>
+            </form>
+            
+            <script>
+                function sendMail() {
+                    var firstName = document.getElementById('first-name').value;
+                    var lastName = document.getElementById('last-name').value;
+                    var email = document.getElementById('email').value;
+                    var phoneNumber = document.getElementById('phone-number').value;
+                    var message = document.getElementById('message').value;
+            
+                    var mailtoLink = `mailto:albinkthomas45@gamil.com?subject=Contact%20Form%20Submission&body=
+                    First%20Name%3A%20${encodeURIComponent(firstName)}%0A
+                    Last%20Name%3A%20${encodeURIComponent(lastName)}%0A
+                    Email%3A%20${encodeURIComponent(email)}%0A
+                    Phone%20Number%3A%20${encodeURIComponent(phoneNumber)}%0A
+                    Message%3A%20${encodeURIComponent(message)}`;
+            
+                    window.location.href = mailtoLink;
+                }
+            </script>
+            
+        </div>
+    </section>
+
+
+
+    /* From Uiverse.io by wilsondesouza */ 
+<ul class="example-2" style="background-image: linear-gradient(to origin-top-right , rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%);">
+  <li class="icon-content">
+    <a
+      href="https://www.linkedin.com/in/albin-kurian-thomas-638886318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      aria-label="LinkedIn"
+      data-social="linkedin"
+    >
+      <div class="filled" style="color: aliceblue;"></div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-linkedin"
+        viewBox="0 0 16 16"
+        xml:space="preserve"
+      >
+        <path
+          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+    <div class="tooltip">LinkedIn</div>
+  </li>
+  <li class="icon-content">
+    <a href="https://albin182006.github.io/portfolio/" aria-label="GitHub" data-social="github">
+      <div class="filled"></div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-github"
+        viewBox="0 0 16 16"
+        xml:space="preserve"
+      >
+        <path
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+    <div class="tooltip">GitHub</div>
+  </li>
+  <li class="icon-content">
+    <a
+      href="https://www.instagram.com/_.al_bn._?igsh=Y3NiNmx5MmprdWow"
+      aria-label="Instagram"
+      data-social="instagram"
+    >
+      <div class="filled"></div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-instagram"
+        viewBox="0 0 16 16"
+        xml:space="preserve"
+      >
+        <path
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+    <div class="tooltip">Instagram</div>
+  </li>
+  <li class="icon-content">
+    <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube">
+      <div class="filled"></div>
+       <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-youtube"
+        viewBox="0 0 16 16"
+        xml:space="preserve"
+      >
+        <path
+          d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+    <div class="tooltip">Youtube</div>
+  </li>
+</ul>
+
+
+
+
+<div id="content" style="display: none;">
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content of the website.</p>
+</div>
+
+<script>
+    // Simulate a loading delay
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.querySelector('.loader-container').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }, 800); // Change the duration as needed
+    });
+</script>
+
+
+
+
+
+
+    <script src="script.js"></script>    
+</body>
+</html>

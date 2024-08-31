@@ -1,3 +1,7 @@
+body {
+  background: #000;
+}
+
 /* Loader CSS */
 .loader-container {
     position: fixed;
@@ -197,12 +201,12 @@ body, html {
 
 .parallax-container {
     position: relative;
-    height: 500px; /* Adjust the height as needed */
-    background-image: url('/Portfolio/tailwin/bg.png');
+    height: 600px; /* Adjust the height as needed */
+    background-image: url('https://github.com/user-attachments/assets/8b932301-6b1f-4dfa-b12d-738a4a19bc4a');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 62% auto;
 }
 
 .parallax-text {
